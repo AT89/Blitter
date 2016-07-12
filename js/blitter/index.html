@@ -1,4 +1,5 @@
 <div data-ng-repeat="bleet in BlitterIndexViewModel.bleets">
-    <p>{{blitter_resources.updated_at}} | {{blitter_resources.content}}<p>
-      <p>Likes: {{blitter_resources.likes}}</p>
+    <p>{{bleet.updated_at | date}} .... Likes: {{bleet.likes}}</p>
+    <p> {{bleet.content}}<p>
+      <p></p>
 </div>
