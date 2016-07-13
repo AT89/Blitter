@@ -1,5 +1,4 @@
 <div data-ng-repeat="bleet in BlitterIndexViewModel.bleets">
-    <p>{{bleet.updated_at | date}} .... Likes: {{bleet.likes}}</p>
-    <p> {{bleet.content}}<p>
-      <p></p>
+    <p>Likes: {{bleet.likes}}</p>
+    <p><a data-ui-sref="blitterShow({id: bleet.id})">{{bleet.content}}</a><p>
 </div>

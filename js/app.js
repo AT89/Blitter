@@ -21,7 +21,9 @@
     })
     .state("blitterShow", {
       url: "/bleets/:id",
-      templateUrl: "/js/blitter/show.html"
+      templateUrl: "/js/blitter/show.html",
+      controller: "BlitterShowController",
+      controllerAs: "BlitterShowViewModel"
     });
   }
 })();

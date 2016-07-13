@@ -13,4 +13,4 @@ console.log("Controller online");
     this.bleets = BlitterFactory.query();
   }
 
-}());
+})();
