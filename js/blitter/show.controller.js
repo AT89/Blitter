@@ -11,7 +11,11 @@
   ]);
 
   function BlitterShowControllerFunction(BlitterFactory, $stateParams){
+    var vm = this;
     console.log("show controller works");
-    this.bleets = BlitterFactory.get({id: $stateParams.id});
+    this.bleet = BlitterFactory.get({id: $stateParams.id});
+    vm.update = function(bleet){
+      vm.bleet.$save();
+    }
   }
 })();

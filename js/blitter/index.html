@@ -1,4 +1,10 @@
+<form>
+  <input data-ng-model="BlitterIndexViewModel.bleet.content">
+  <button type="button" data-ng-click="BlitterIndexViewModel.create()">bleet</button>
+</form>
+
+
 <div data-ng-repeat="bleet in BlitterIndexViewModel.bleets">
     <p>Likes: {{bleet.likes}}</p>
-    <p><a data-ui-sref="blitterShow({id: bleet.id})">{{bleet.content}}</a><p>
+    <button data-ng-click="BlitterIndexViewModel.delete(bleet)">x</button><a data-ui-sref="blitterShow({id: bleet.id})">{{bleet.content}}</a><p>
 </div>
