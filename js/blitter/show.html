@@ -5,3 +5,8 @@
 
 
 <h2>Edit this bleet</h2>
+
+<form data-ng-submit="BlitterShowViewModel.update()">
+  <input placeholder="content" data-ng-model="BlitterShowViewModel.bleet.content"/>
+<button type="submit">rebleet</button>
+</form>

@@ -6,5 +6,8 @@
 
 <div data-ng-repeat="bleet in BlitterIndexViewModel.bleets">
     <p>Likes: {{bleet.likes}}</p>
-    <button data-ng-click="BlitterIndexViewModel.delete(bleet)">x</button><a data-ui-sref="blitterShow({id: bleet.id})">{{bleet.content}}</a><p>
+
+    <button data-ng-click="BlitterIndexViewModel.destroy(bleet)">x</button>
+
+    <a data-ui-sref="blitterShow({id: bleet.id})">{{bleet.content}}</a><p>
 </div>

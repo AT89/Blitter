@@ -9,6 +9,8 @@
     ]);
 
     function BlitterFactoryFunction($resource){
-      return $resource("http://localhost:3000/bleets/:id");
-    }
+      return $resource("http://localhost:3000/bleets/:id", {}, {
+        update: {method: "PUT"}
+    });
+  }
 })();

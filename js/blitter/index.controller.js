@@ -20,5 +20,11 @@ console.log("Controller online");
         vm.bleets.push(vm.bleet)
       })
     }
+    this.destroy = function(bleet){
+      this.bleet.$delete({id: bleet.id}).then(function(response){
+        $state.reload()
+        // WHY IS RELOAD NOT A FUNCTION
+      })
+    }
   }
 })();
